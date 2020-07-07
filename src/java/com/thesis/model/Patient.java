@@ -30,7 +30,16 @@ public class Patient {
     private Double Resistin;
     private Double MCP;
     private String state; 
+    private Doctor doc;
 
+    public Doctor getDoc() {
+        return doc;
+    }
+
+    public void setDoc(Doctor doc) {
+        this.doc = doc;
+    }
+    
     public String getState() {
         return state;
     }

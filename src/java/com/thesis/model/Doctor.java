@@ -5,6 +5,7 @@
  */
 package com.thesis.model;
 
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -28,7 +29,16 @@ public class Doctor {
     private String address;
     private String username;
     private String password;
+    private List<Patient> lsPatient;
 
+    public List<Patient> getLsPatient() {
+        return lsPatient;
+    }
+
+    public void setLsPatient(List<Patient> lsPatient) {
+        this.lsPatient = lsPatient;
+    }
+    
     public String getUsername() {
         return username;
     }
